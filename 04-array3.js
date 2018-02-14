@@ -22,7 +22,7 @@ function dataHandling2(input){
         case '11': {(bulan = 'Januari');break;}
         case '12': {(bulan = 'Januari');break;}
     
-        default: {bulan = 'Bulan tidak teridentifikasi'}break;
+        default: { (bulan = 'Bulan tidak teridentifikasi'); break;}
     }
     console.log(bulan)
 
