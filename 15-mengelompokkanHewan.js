@@ -13,13 +13,38 @@ Urutan hewan dalam array setiap pengelompokan huruf tidak penting.
 
 function groupAnimals(animals) {
     // you can only write your code here!
+    var srt = animals.sort()
     var output = [];
-    
+    var isi = []
 
-    for(i=0;i<animals.length;i++){
-       console.log(animals[i])
+    for (var i = 0; i < animals.length; i++) {
+
+        if (i !== animals.length - 1) {
+
+            if (animals[i][0] === animals[i + 1][0]) {
+
+                isi.push(animals[i])
+
+            } else {
+
+                isi.push(animals[i])
+                output.push(isi)
+                isi = []
+
+            }
+
+        } else {
+
+            isi.push(animals[i])
+            output.push(isi)
+
+        }
+
+
     }
-    // return ubah
+
+
+    return output
 }
 
 // TEST CASES

@@ -24,9 +24,9 @@ function targetTerdekat(arr) {
         
     }
 
-    if (tampungX===0) {
+    if (tampungX==0) {
         return 0
-    }else if (tampungO===0) {
+    }else if (tampungO==0) {
         for(j=arr.length-1;j>=0;j--){
             if (arr[j]=='o') {
                 tampungO = j+1

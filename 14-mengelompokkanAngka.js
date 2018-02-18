@@ -24,7 +24,7 @@ function mengelompokkanAngka(arr) {
             output[1].push(arr[i])
         }
     }
-    console.log(output)
+    return output
     
 }
 
